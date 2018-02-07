@@ -1,4 +1,4 @@
-- name: Home
+- name: 首页
   path: index.html
   section_id: home
   children:
@@ -6,20 +6,20 @@
       path: index.html
     - name: Home alternative
       path: index-alternative.html
-- name: Services
+- name: 服务
   path: services.html
   section_id: services
-- name: About
+- name: 关于我们
   path: about.html
   section_id: about
-- name: Portfolio
+- name: 房间展示
   path: portfolio.html
   section_id: portfolio
   children:
-    - name: Portfolio
+    - name: 标准间
       path: portfolio.html
-    - name: Portfolio single
+    - name: 豪华单间
       path: portfolio-item.html
-- name: Blog
+- name: 企业博客
   path: blog/
   section_id: blog
