@@ -1,12 +1,12 @@
 <ul class='gallery small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
-  {% for work in page.works %}
+  {% for room in site.data.rooms %}
   <li>
     <a>
-      <img src='{{site.url}}/images/{{ work.image }}'>
+      <img src='{{site.url}}/images/{{ room.image }}'>
       <div class='overlay'>
         <div class='thumb-info'>
-          <h3>{{ work.title }}</h3>
-          <p>{{ work.category }}</p>
+          <h3>{{ room.title }}</h3>
+          <p>{{ room.category }}</p>
         </div>
       </div>
     </a>

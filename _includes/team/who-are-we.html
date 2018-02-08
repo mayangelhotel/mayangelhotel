@@ -1,0 +1,35 @@
+
+<div class='full light-yellow'>
+    <div class='row'>
+        <div class='special-title centered-text'>
+            <i class='icon-users'></i>
+            <h2>我们的团队</h2>
+            <p>你开心我们就开心</p>
+            <p class='shortline'></p>
+        </div>
+        <div class='spacing'></div>
+        <div class='spacing'></div>
+    </div>
+    <div class='row'>
+        <div class='medium-6 large-6 columns'>
+            <p>
+                <span class='drop-letters'>我</span>
+                是一家专业的酒店管理公司。公司拥有数支有战斗力的管理团队，主要业务有酒店委托管理、酒店项目前期立项、酒店筹建筹备、大型浴场的托管、高档酒楼的托管、以及代理国际注册酒店职业经理人的资格认证。
+            </p>
+            <p>美湘谊的酒店管理人才,80%为本科学历，50%通过了国际注册酒店职业经理人（IPA）的资格认证，并且在酒店各岗位都是实战多年，都具有来之能战、战之能武的职业能力。</p>
+        </div>
+        <div class='medium-6 large-6 columns'>
+            <ul class='bars'>
+                {% for bar in site.data.bars %}
+                <li>
+                    <h4>
+                        {{bar.title}}
+                        <strong>{{bar.percent}}%</strong>
+                    </h4>
+                    <p class='highlighted' data-percent='{{bar.percent}}'></p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
